@@ -73,6 +73,7 @@ new FormModel {
 				name: "scrollPane1"
 				add( new FormComponent( "javax.swing.JTable" ) {
 					name: "table1"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "table1MouseClicked", true ) )
 				} )
 			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 				"value": "cell 0 6"
